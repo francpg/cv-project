@@ -1,0 +1,393 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+body,
+html {
+    height: 100%;
+    font-family: $font-family-body;
+
+    @include desktop {
+        height: 938px;
+    }
+}
+
+body {
+    background-color: $color-fondo;
+    background-image: $fondo-peque;
+    background-blend-mode: soft-light;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: auto;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, .7);
+
+    display: contents;
+
+    @include desktop {
+        width: 880px;
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-areas: "aside main";
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-terciario;
+    }
+}
+
+main {
+    grid-area: main;
+    display: block;
+    background-color: $color-secundario;
+    background-image: $fondo-granulado;
+    background-blend-mode: overlay;
+    padding-top: $padding;
+    padding-bottom: $padding;
+
+    section#nombre {
+        margin: $padding;
+        margin-right: 0;
+
+        #fondo-nombre {
+            background-color: $color-principal;
+            padding: 0;
+
+            h1 {
+                display: inline-block;
+                color: $color-principal;
+                background-color: $color-secundario;
+                background-image: $fondo-granulado;
+                background-blend-mode: overlay;
+                font-family: $font-family-titulos;
+                text-transform: uppercase;
+                text-align: left;
+                vertical-align: bottom;
+                letter-spacing: .03em;
+                font-weight: normal;
+                margin-top: -0.2em;
+                margin-bottom: -0.3em;
+                padding-right: 10px;
+
+                font-size: 3em;
+
+                @include desktop {
+                    font-size: 4.5em;
+                }
+            }
+        }
+
+        h2 {
+            color: $color-terciario;
+            font-family: $font-family-titulos;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            font-weight: normal;
+            margin: 0;
+            margin-top: .3em;
+        }
+    }
+
+    section#presentacion {
+        background-color: rgb(39, 39, 39);
+        background-image: $fondo-grande;
+        background-blend-mode: multiply;
+        padding: $padding;
+
+        display: block;
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-areas: "foto texto";
+        }
+
+        #foto {
+            display: block;
+            grid-area: foto;
+            text-align: center;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                width: 180px;
+                box-shadow: 0 1px 30px rgba(0, 0, 0, .5);
+            }
+        }
+
+        #texto {
+            grid-area: texto;
+            vertical-align: top;
+            color: $color-secundario;
+
+            p {
+                font-size: 1em;
+                line-height: 1.3em;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                text-align: justify;
+            }
+
+            q {
+                font-size: 1.6em;
+                line-height: .9em;
+                margin-left: 10px;
+                font-family: $font-family-titulos;
+                font-weight: 100;
+                letter-spacing: .04em;
+                color: lighten($color: $color-principal, $amount: 10)
+            }
+
+            h6 {
+                font-size: .7em;
+                font-weight: normal;
+                margin: 0;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    section#detalle {
+        padding: 0;
+        margin-left: $padding;
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        section {
+            background-color: darken($color: $color-secundario, $amount: 10);
+            background-image: $fondo-granulado;
+            background-blend-mode: overlay;
+            margin-top: $padding;
+            margin-right: $padding;
+            padding: $padding $padding/2 $padding $padding;
+            overflow-y: auto;
+
+            h3 {
+                font-family: $font-family-titulos;
+                font-size: 1.8em;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            ul {
+                height: 400px;
+                overflow-y: auto;
+                list-style-type: none;
+                margin: 0;
+                padding-top: 0;
+                padding-right: $padding/2;
+                padding-bottom: 0;
+                padding-left: 0;
+
+                li {
+                    h4 {
+                        background-color: $color-principal;
+                        color: $color-secundario;
+                        padding: .1em .5em .1em .5em;
+                        margin: 18px 0 0 0;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        font-size: .8em;
+                    }
+
+                    h5 {
+                        color: darken($color: $color-terciario, $amount: 15);
+                        text-transform: uppercase;
+                        font-family: $font-family-subtitulos;
+                        margin: 6px 0 0 0;
+                        font-size: .9em;
+                    }
+
+                    h6 {
+                        color: darken($color: $color-terciario, $amount: 5);
+                        font-size: .9em;
+                        margin: 0 0 0 0;
+                        font-style: italic;
+                    }
+
+                    p {
+                        font-size: .8em;
+                        text-align: justify;
+                        margin: 5px 0 0 0;
+                        line-height: 1.2em;
+                    }
+
+                }
+            }
+
+            ul::-webkit-scrollbar {
+                width: 7px;
+            }
+
+            ul::-webkit-scrollbar-thumb {
+                background-color: transparentize($color: $color-terciario, $amount: .8);
+            }
+        }
+    }
+}
+
+aside {
+    grid-area: aside;
+    background-color: $color-principal;
+    background-image: $fondo-grande;
+    background-blend-mode: multiply;
+    margin: 0;
+
+    display: block;
+    padding: 0 $padding $padding $padding;
+
+    @include desktop {
+        display: block;
+    }
+
+    section {
+        margin: $padding 0 0 $padding;
+
+        @include desktop {
+            margin: 50px 0 0 0;
+        }
+
+        h3 {
+            color: lighten($color: $color-secundario, $amount: 10);
+            font-family: $font-family-titulos;
+            font-size: 1.6em;
+            font-weight: 100;
+            letter-spacing: .1em;
+            margin: 0;
+        }
+    }
+
+    section#qr {
+        margin: 0;
+        height: auto;
+        background-color: $color-secundario;
+        clip-path: inset(0 30% 0 30%);
+
+        @include desktop {
+            height: 120px;
+            clip-path: inset(0 22% 0 22%);
+        }
+
+        img {
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include desktop {
+                width: 120px;
+            }
+        }
+    }
+
+    section#contacto {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-family: $font-family-body;
+                display: grid;
+                grid-template-columns: 34px auto;
+                margin-top: 18px;
+
+                img {
+                    margin: 0;
+                    vertical-align: bottom;
+                }
+
+                span {
+                    color: darken($color-secundario, $amount: 10);
+                    letter-spacing: .08em;
+                    font-size: .7em;
+                    vertical-align: middle;
+                    margin: -5px 0 0 0;
+                }
+            }
+        }
+    }
+
+    section#habilidades {
+        ul {
+            list-style-type: none;
+            margin: 18px 0 0 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                font-family: $font-family-body;
+                margin: 0 8px 0 0;
+
+                img {
+                    width: 40px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    section#intereses {
+        ul {
+            list-style-type: none;
+            margin: 18px 0 0 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                font-family: $font-family-body;
+                margin: 0 10px 12px 0;
+                width: 54px;
+                color: lighten($color: $color-secundario, $amount: 10);
+
+                img {
+                    display: block;
+                    padding-left: 25%;
+                    padding-right: auto;
+                    size: 32px;
+                }
+
+                span {
+                    font-family: $font-family-subtitulos;
+                    display: block;
+                    font-size: .6em;
+                    letter-spacing: .1em;
+                    text-align: center;
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    section#redes {
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                font-family: $font-family-body;
+                color: $color-secundario;
+
+                img {
+                    margin: 0;
+                    vertical-align: bottom;
+                }
+
+                span {
+                    color: darken($color-secundario, $amount: 10);
+                    letter-spacing: .08em;
+                    font-size: .7em;
+                    vertical-align: middle;
+                    margin: -5px 0 0 15px;
+                }
+            }
+        }
+    }
+
+}

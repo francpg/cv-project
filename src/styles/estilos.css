@@ -1,0 +1,425 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/src/fuentes/BebasNeue-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Geometos";
+  src: url("/src/fuentes/Geometos.ttf");
+}
+
+
+#root {
+  display: contents;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: 840px) {
+
+  body,
+  html {
+    height: 938px;
+  }
+}
+
+body {
+  background-color: #424216;
+  background-image: url("/src/img/fondo-peque.jpg");
+  background-blend-mode: soft-light;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: auto;
+  -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.7);
+  display: contents;
+}
+
+@media (min-width: 840px) {
+  body {
+    width: 880px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px auto;
+    grid-template-columns: 250px auto;
+    grid-template-areas: "aside main";
+  }
+}
+
+body a {
+  text-decoration: none;
+  color: #545355;
+}
+
+main {
+  grid-area: main;
+  display: block;
+  background-color: #dcdbe0;
+  background-image: url("/src/img/fondo-granulado.jpg");
+  background-blend-mode: overlay;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main section#nombre {
+  margin: 20px;
+  margin-right: 0;
+}
+
+main section#nombre #fondo-nombre {
+  background-color: #306fb2;
+  padding: 0;
+}
+
+main section#nombre #fondo-nombre h1 {
+  display: inline-block;
+  color: #306fb2;
+  background-color: #dcdbe0;
+  background-image: url("/src/img/fondo-granulado.jpg");
+  background-blend-mode: overlay;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  vertical-align: bottom;
+  letter-spacing: .03em;
+  font-weight: normal;
+  margin-top: -0.2em;
+  margin-bottom: -0.3em;
+  padding-right: 10px;
+  font-size: 3em;
+}
+
+@media (min-width: 840px) {
+  main section#nombre #fondo-nombre h1 {
+    font-size: 4.5em;
+  }
+}
+
+main section#nombre h2 {
+  color: #545355;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: normal;
+  margin: 0;
+  margin-top: .3em;
+}
+
+main section#presentacion {
+  background-color: #272727;
+  background-image: url("/src/img/fondo-grande.jpg");
+  background-blend-mode: multiply;
+  padding: 20px;
+  display: block;
+}
+
+@media (min-width: 840px) {
+  main section#presentacion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px auto;
+    grid-template-columns: 200px auto;
+    grid-template-areas: "foto texto";
+  }
+}
+
+main section#presentacion #foto {
+  display: block;
+  grid-area: foto;
+  text-align: center;
+}
+
+main section#presentacion #foto img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.5);
+}
+
+main section#presentacion #texto {
+  grid-area: texto;
+  vertical-align: top;
+  color: #dcdbe0;
+}
+
+main section#presentacion #texto p {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+main section#presentacion #texto q {
+  font-size: 1.6em;
+  line-height: .9em;
+  margin-left: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  letter-spacing: .04em;
+  color: #4788ce;
+}
+
+main section#presentacion #texto h6 {
+  font-size: .7em;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 5px;
+}
+
+main section#detalle {
+  padding: 0;
+  margin-left: 20px;
+}
+
+@media (min-width: 840px) {
+  main section#detalle {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+main section#detalle section {
+  background-color: #c1c0c8;
+  background-image: url("/src/img/fondo-granulado.jpg");
+  background-blend-mode: overlay;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 20px 10px 20px 20px;
+  overflow-y: auto;
+}
+
+main section#detalle section h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  margin: 0;
+}
+
+main section#detalle section ul {
+  height: 400px;
+  overflow-y: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+main section#detalle section ul li h4 {
+  background-color: #306fb2;
+  color: #dcdbe0;
+  padding: .1em .5em .1em .5em;
+  margin: 18px 0 0 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+main section#detalle section ul li h5 {
+  color: #2e2d2e;
+  text-transform: uppercase;
+  font-family: "Geometos", sans-serif;
+  margin: 6px 0 0 0;
+  font-size: .9em;
+}
+
+main section#detalle section ul li h6 {
+  color: #474648;
+  font-size: .9em;
+  margin: 0 0 0 0;
+  font-style: italic;
+}
+
+main section#detalle section ul li p {
+  font-size: .8em;
+  text-align: justify;
+  margin: 5px 0 0 0;
+  line-height: 1.2em;
+}
+
+main section#detalle section ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+main section#detalle section ul::-webkit-scrollbar-thumb {
+  background-color: rgba(84, 83, 85, 0.2);
+}
+
+aside {
+  grid-area: aside;
+  background-color: #306fb2;
+  background-image: url("/src/img/fondo-grande.jpg");
+  background-blend-mode: multiply;
+  margin: 0;
+  display: block;
+  padding: 0 20px 20px 20px;
+}
+
+@media (min-width: 840px) {
+  aside {
+    display: block;
+  }
+}
+
+aside section {
+  margin: 20px 0 0 20px;
+}
+
+@media (min-width: 840px) {
+  aside section {
+    margin: 50px 0 0 0;
+  }
+}
+
+aside section h3 {
+  color: #f7f6f8;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6em;
+  font-weight: 100;
+  letter-spacing: .1em;
+  margin: 0;
+}
+
+aside section#qr {
+  margin: 0;
+  height: auto;
+  background-color: #dcdbe0;
+  -webkit-clip-path: inset(0 30% 0 30%);
+  clip-path: inset(0 30% 0 30%);
+}
+
+@media (min-width: 840px) {
+  aside section#qr {
+    height: 120px;
+    -webkit-clip-path: inset(0 22% 0 22%);
+    clip-path: inset(0 22% 0 22%);
+  }
+}
+
+aside section#qr img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 840px) {
+  aside section#qr img {
+    width: 120px;
+  }
+}
+
+aside section#contacto ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside section#contacto ul li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34px auto;
+  grid-template-columns: 34px auto;
+  margin-top: 18px;
+}
+
+aside section#contacto ul li img {
+  margin: 0;
+  vertical-align: bottom;
+}
+
+aside section#contacto ul li span {
+  color: #c1c0c8;
+  letter-spacing: .08em;
+  font-size: .7em;
+  vertical-align: middle;
+  margin: -5px 0 0 0;
+}
+
+aside section#habilidades ul {
+  list-style-type: none;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+
+aside section#habilidades ul li {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 8px 0 0;
+}
+
+aside section#habilidades ul li img {
+  width: 40px;
+  margin: 0;
+}
+
+aside section#intereses ul {
+  list-style-type: none;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+
+aside section#intereses ul li {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 10px 12px 0;
+  width: 54px;
+  color: #f7f6f8;
+}
+
+aside section#intereses ul li img {
+  display: block;
+  padding-left: 25%;
+  padding-right: auto;
+  size: 32px;
+}
+
+aside section#intereses ul li span {
+  font-family: "Geometos", sans-serif;
+  display: block;
+  font-size: .6em;
+  letter-spacing: .1em;
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+aside section#redes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside section#redes ul li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #dcdbe0;
+
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34px auto;
+  grid-template-columns: 34px auto;
+  margin-top: 18px;
+}
+
+aside section#redes ul li img {
+  margin: 0;
+  vertical-align: bottom;
+}
+
+aside section#redes ul li span {
+  color: #c1c0c8;
+  letter-spacing: .08em;
+  font-size: .7em;
+  vertical-align: bottom;
+  margin: 7px 0 0 15px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
