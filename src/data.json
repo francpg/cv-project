@@ -1,17 +1,17 @@
 {
-    "firstName": "Francisco Alonso",
-    "lastName": "Puerta Grimaldo",
-    "shortName": "Francisco Puerta",
+    "firstName": "Juan Carlos",
+    "lastName": "Perez",
+    "shortName": "Juan Pérez",
     "actualTitle": "Programador",
     "urlPhoto": "src/img/foto.png",
     "urlQR": "src/img/codigo-qr.png",
     "phone": [
-        "+51 959 790 340",
-        "+511 336 9081"
+        "+51 999 888 777",
+        "+511 345 1234"
     ],
     "email": [
-        "fapg3105@hotmail.com",
-        "fapg3105@gmail.com"
+        "personal@hotmail.com",
+        "private@gmail.com"
     ],
     "address": [
         "Cercado de Lima",
@@ -30,7 +30,7 @@
                 "dateFrom": "Oct 2022",
                 "dateTo": "Actualidad",
                 "title": "Gestor Operativo de TI",
-                "subtitle": "Taller de Confecciones San Luis S.A. (Kids made here) - San Luis, Lima",
+                "subtitle": "Empresa Papelera",
                 "description": [
                     "Analizando y administrando los recursos tecnológicos de la empresa para dar respuesta oportuna a las solicitudes y requerimientos de los clientes internos.",
                     "Desarrollo de sistemas de información (C# .Net con conexión a SQL Server) según las especificaciones entregadas.",
@@ -46,7 +46,7 @@
                 "dateFrom": "Dic 2021",
                 "dateTo": "Sep 2022",
                 "title": "Analista Programador",
-                "subtitle": "Taller de Confecciones San Luis S.A. (Kids made here) - San Luis, Lima",
+                "subtitle": "Empresa Papelera",
                 "description": [
                     "Analizando y administrando los recursos tecnológicos de la empresa para dar respuesta oportuna a las solicitudes y requerimientos de los clientes internos.",
                     "Desarrollo de sistemas de información (C# .Net con conexión a SQL Server) según las especificaciones entregadas.",
@@ -58,134 +58,48 @@
                 "dateFrom": "May 2020",
                 "dateTo": "Dic 2021",
                 "title": "Analista Programador",
-                "subtitle": "KY Consulting - Lima",
+                "subtitle": "Consultora de Sistemas",
                 "description": [
                     "Me desempeño en distintos proyectos de desarrollo de software que incluyen aplicaciones móviles, aplicaciones Web y de escritorio Windows.",
                     "Las aplicaciones que desarrollamos permiten a los usuarios interactuar con la información que manejan en sus sistemas SAP Business One de manera sencilla, oportuna y que se ajusten a sus necesidades."
-                ]
-            },
-            {
-                "dateFrom": "Sep 2019",
-                "dateTo": "Dic 2019",
-                "title": "Analista Programador",
-                "subtitle": "Taller de Confecciones San Luis S.A. (Kids made here) - San Luis, Lima",
-                "description": [
-                    "Analizando y administrando los recursos tecnológicos de la empresa para dar respuesta oportuna a las solicitudes y requerimientos de los clientes internos.",
-                    "Desarrollo de sistemas de información (C# .Net con conexión a SQL Server) según las especificaciones entregadas.",
-                    "Mantenimiento de los sistemas de información, cumpliendo con las normas y estándares establecidos, niveles de seguridad, calidad y performance requeridos.",
-                    "Soporte funcional de los sistemas reportados por los usuarios."
-                ]
-            },
-            {
-                "dateFrom": "Sep 2017",
-                "dateTo": "Ene 2019",
-                "title": "Analista Programador",
-                "subtitle": "ELISE SAC - Surquillo, Lima",
-                "description": [
-                    "Realizando el mantenimiento del sistema integrado (ERP desarrollado en Visual Basic .Net) propio de la empresa.",
-                    "Participación en el desarrollo de módulos (Cotización, Servicios, Facturación y otros) bajo la dirección del jefe de proyecto.",
-                    "Esto incluye el desarrollo de la interfaz gráfica, la creación de las funciones en la aplicación y procedures en la BD Oracle."
-                ]
-            },
-            {
-                "dateFrom": "Jun 2015",
-                "dateTo": "Ago 2017",
-                "title": "Técnico Soporte TI",
-                "subtitle": "APD SA (España) - Cercado, Lima",
-                "description": [
-                    "Resolviendo inconvenientes en el uso de los computadores portátiles instalados en los patrulleros inteligentes de la PNP.",
-                    "Reparación, cambio de componentes y configuración de dispositivos: portátil (Getac S400), router 3G y transformador de corriente.",
-                    "Redacción de informes diarios, mensuales y anuales."
-                ]
-            },
-            {
-                "dateFrom": "Sep 2013",
-                "dateTo": "Feb 2015",
-                "title": "Analista Programador",
-                "subtitle": "ELISE SAC - Surquillo, Lima",
-                "description": [
-                    "Realizando el mantenimiento del sistema integrado (ERP) propio de la empresa.",
-                    "Participación en el desarrollo de módulos."
                 ]
             }
         ],
         "education": [
             {
-                "dateFrom": "May 2016",
+                "dateFrom": "Ene 2015",
                 "dateTo": "Dic 2020",
-                "title": "Ingeniería de Sistemas Computacionales",
-                "subtitle": "Universidad Privada del Norte - Breña, Lima",
+                "title": "Ingeniería de Sistemas"
+                "subtitle": "Universidad de la Vida",
                 "description": [
                     "Obtenido el grado de Bachiller."
                 ]
             },
             {
-                "dateFrom": "Ago 2008",
-                "dateTo": "Jul 2013",
-                "title": "Ingeniería de Computación y Sistemas",
-                "subtitle": "Universidad de San Martín de Porres - La Molina, Lima",
-                "description": [
-                    "Cursado hasta el 6to ciclo."
-                ]
-            },
-            {
-                "dateFrom": "2005",
-                "dateTo": "2007",
-                "title": "Computación e Informática",
-                "subtitle": "Instituto Cibertec - Jesús María, Lima",
-                "description": [
-                    "Cursado hasta el 3er ciclo."
-                ]
-            },
-            {
-                "dateFrom": "2001",
+                "dateFrom": "2000",
                 "dateTo": "2004",
                 "title": "Secundaria",
-                "subtitle": "CEPq Luz Casanova - Breña, Lima"
-            },
-            {
-                "dateFrom": "2000",
-                "dateTo": "2000",
-                "title": "Secundaria",
-                "subtitle": "CN Mariano Melgar - Breña, Lima"
-            },
-            {
-                "dateFrom": "1997",
-                "dateTo": "1999",
-                "title": "Primaria",
-                "subtitle": "CEPq Luz Casanova - Breña, Lima"
+                "subtitle": "Colegio Excelencia"
             },
             {
                 "dateFrom": "1994",
-                "dateTo": "1996",
+                "dateTo": "1999",
                 "title": "Primaria",
-                "subtitle": "CEP San Francisco de Asís - Breña, Lima"
+                "subtitle": "Colegio Buen Día"
             }
         ],
         "certifications": [
             {
-                "dateFrom": "Dic 2023",
-                "dateTo": "Ene 2024",
-                "title": "Manejo del DOM con JavaScript",
-                "subtitle": "EDteam"
-            },
-            {
                 "dateFrom": "Nov 2023",
                 "dateTo": "Dic 2023",
-                "title": "JavaScript desde cero",
-                "subtitle": "EDteam"
+                "title": "JavaScript",
+                "subtitle": "Cursera"
             },
             {
-                "dateFrom": "Oct 2021",
-                "dateTo": "Nov 2021",
-                "title": "Curso Aplicativo Scrum",
-                "subtitle": "Escuela Nacional de Control - Lima"
-            },
-            {
-                "dateFrom": "Jul 2019",
-                "dateTo": "Sep 2019",
-                "title": "Visual Studio 2017 Web Developer",
-                "subtitle": "Cibertec - Lima"
+                "dateFrom": "Jun 2019",
+                "dateTo": "Ago 2019",
+                "title": "Visual Studio Web Developer",
+                "subtitle": "Instituto New Year"
             }
         ]
     },
@@ -229,14 +143,14 @@
         {
             "network": "linkedin",
             "urlIcon": "src/img/icono-linkedin.png",
-            "urlPage": "https://www.linkedin.com/in/francpg/",
-            "handle": "francpg"
+            "urlPage": "https://www.linkedin.com/in/personal/",
+            "handle": "personal"
         },
         {
             "network": "facebook",
             "urlIcon": "src/img/icono-facebook.png",
-            "urlPage": "https://www.facebook.com/franc.pg",
-            "handle": "franc.pg"
+            "urlPage": "https://www.facebook.com/private",
+            "handle": "private"
         }
     ]
 }
