@@ -3,8 +3,8 @@
     "lastName": "Perez",
     "shortName": "Juan Pérez",
     "actualTitle": "Programador",
-    "urlPhoto": "src/img/foto.png",
-    "urlQR": "src/img/codigo-qr.png",
+    "urlPhoto": "https://www.profilebakery.com/wp-content/uploads/2023/04/Profile-Image-AI.jpg",
+    "urlQR": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1024px-QR_code_for_mobile_English_Wikipedia.svg.png",
     "phone": [
         "+51 999 888 777",
         "+511 345 1234"
@@ -14,7 +14,7 @@
         "private@gmail.com"
     ],
     "address": [
-        "Cercado de Lima",
+        "San Luis",
         "Lima",
         "Perú"
     ],
@@ -30,7 +30,7 @@
                 "dateFrom": "Oct 2022",
                 "dateTo": "Actualidad",
                 "title": "Gestor Operativo de TI",
-                "subtitle": "Empresa Papelera",
+                "subtitle": "Empresa ABC",
                 "description": [
                     "Analizando y administrando los recursos tecnológicos de la empresa para dar respuesta oportuna a las solicitudes y requerimientos de los clientes internos.",
                     "Desarrollo de sistemas de información (C# .Net con conexión a SQL Server) según las especificaciones entregadas.",
@@ -46,7 +46,7 @@
                 "dateFrom": "Dic 2021",
                 "dateTo": "Sep 2022",
                 "title": "Analista Programador",
-                "subtitle": "Empresa Papelera",
+                "subtitle": "Empresa XYZ",
                 "description": [
                     "Analizando y administrando los recursos tecnológicos de la empresa para dar respuesta oportuna a las solicitudes y requerimientos de los clientes internos.",
                     "Desarrollo de sistemas de información (C# .Net con conexión a SQL Server) según las especificaciones entregadas.",
@@ -69,7 +69,7 @@
             {
                 "dateFrom": "Ene 2015",
                 "dateTo": "Dic 2020",
-                "title": "Ingeniería de Sistemas"
+                "title": "Ingeniería de Sistemas",
                 "subtitle": "Universidad de la Vida",
                 "description": [
                     "Obtenido el grado de Bachiller."
